@@ -1,0 +1,12 @@
+{
+	"author": "jollen",
+	"type": "coapBroker",
+	"connections": [
+		{
+			"upproc": "io.devify.console",
+		 	"upport": "out",
+		 	"downproc": "io.devify.console",
+		 	"downport": "in"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "flowchain",
+  "version": "0.1.0",
+  "description": "Serverless IoT server in a simpilicy way.",
+  "keywords": [
+    "iot"
+  ],
+  "author": "jollen <jollen@jollen.org> (http://jollen.org/)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowchain/flowchain.git"
+  },
+  "homepage": "https://github.com/flowchain/flowchain.git",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "commander": "^2.9.0",
+    "devify-server": "*",
+    "elegant-spinner": "^1.0.1",
+    "log-update": "^1.0.2",
+    "shelljs": "^0.6.0"
+  },
+  "bin": {
+    "flowchain": "./bin/init.js"
+  },
+  "scripts": {
+    "test": "make test",
+    "start": "NODE_ENV=test node bin/init start graphs/hello-fs.json"
+  },
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "mocha": "^2.4.5",
+    "twilio": "^2.9.0"
+  },
+  "license": "MIT License"
+}

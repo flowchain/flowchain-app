@@ -1,0 +1,18 @@
+{
+	"author": "jollen",
+	"type": "coapToWebsocketBroker",
+	"connections": [
+		{
+			"upproc": "io.devify.console",
+		 	"upport": "out",
+		 	"downproc": "io.devify.fs",
+		 	"downport": "in"
+		},
+		{
+			"upproc": "io.devify.fs",
+		 	"upport": "out",
+		 	"downproc": "io.devify.sms",
+		 	"downport": "in"
+		}
+	]
+}
