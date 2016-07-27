@@ -51,7 +51,7 @@ end)
 
 ## Flow-Based Programming
 
-There is a simple and light-weight FBP runtime system called **fb0** inside the Devify framework. This system is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and [NoFlo](https://github.com/noflo/noflo). *fb0* is very tiny, and with only 300+ lines of code.
+There is a simple and light-weight FBP runtime system called **fb0** inside the [WoT.City framework](https://wotcity.com). This system is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and [NoFlo](https://github.com/noflo/noflo). *fb0* is very tiny, and with only 300+ lines of code.
 
 The design of **fb0** is also simple. It's neither *the classical* FBP by J. Paul Morrison, nor the *FBP-like* NoFlo.
 
@@ -59,4 +59,4 @@ The design of **fb0** is also simple. It's neither *the classical* FBP by J. Pau
 
 ## License
 
-devify-server is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+Flowchain is released under the [MIT License](http://www.opensource.org/licenses/MIT).
