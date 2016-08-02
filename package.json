@@ -17,8 +17,10 @@
     "commander": "^2.9.0",
     "devify-server": "*",
     "elegant-spinner": "^1.0.1",
+    "io.flowchain.console": "^0.1.0",
     "log-update": "^1.0.2",
-    "shelljs": "^0.6.0"
+    "shelljs": "^0.6.0",
+    "wotcity.io": "^0.8.13"
   },
   "bin": {
     "flowchain": "./bin/init.js"
