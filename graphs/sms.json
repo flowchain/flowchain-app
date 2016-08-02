@@ -3,9 +3,9 @@
 	"type": "coapBroker",
 	"connections": [
 		{
-			"upproc": "io.flowchain.console",
+			"upproc": "io.flowchain.sms",
 		 	"upport": "out",
-		 	"downproc": "io.flowchain.console",
+		 	"downproc": "io.flowchain.sms",
 		 	"downport": "in"
 		}
 	]
