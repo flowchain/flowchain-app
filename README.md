@@ -105,11 +105,11 @@ You could send a PR to [flowchain](https://github.com/flowchain/flowchain). You 
 
 ## Design Notes
 
-* Flowchain is designing for Serverless IoT server in a simpilicy way.
+* Flowchain is designing for Serverless IoT server in a simpilicy way. And it is a better approach to write IoT application servers. 
 
 * Flowchain is a **Graph Server** based upon [devify-server](https://github.com/DevifyPlatform/devify-server). 
 
-* Flowchain is a better programming model for IoT application (server). Unlike the legacy monolithic application programming model. Flowchain is the flow-based programming model.
+* Unlike the legacy monolithic application programming model. Flowchain is the flow-based programming model.
 
 
 ## Internals
