@@ -15,10 +15,13 @@ The simplest way to learn flowchain is to start *console.json*.
 ```
 $ git clone https://github.com/flowchain/flowchain.git
 $ npm install
+$ export HOST=192.168.0.100
 $ ./bin/init.js start graphs/console.json 
 [devify] Starting coapBroker server...
-WoT/CoAP server is listening at coap://localhost:8000
+WoT/CoAP server is listening at coap://192.168.0.100:8000
 ```
+
+Flowchain application is listening at the host assigned by ```HOST``` environment variable. You can export ```PORT``` to assign listening port as well.
 
 ### Programing IoT device
 
