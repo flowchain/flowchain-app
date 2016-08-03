@@ -4,7 +4,7 @@ Flowchain is an ultra light-weight runtime for flow-based IoT programming.
 
 You can write IoT server, serverless server or localhost server with Flowchain in flow-based programming.
 
-<img src="https://raw.githubusercontent.com/flowchain/flowchain/master/screenshots/usage.gif" border="1" />
+<img src="https://raw.githubusercontent.com/flowchain/flowchain/master/screenshots/usage0.gif" border="1" />
 
 With flowchain, you're drawing the *Graph* in the form of JSON. Flowchain can run the graph as a service process (server) at your IoT devices or desktops.
 
