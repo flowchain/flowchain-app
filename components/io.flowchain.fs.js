@@ -58,7 +58,7 @@ var appendFile = function(data) {
 exports.getComponent = function() {
   var component = new wotcity.Component;
 
-  component.name = "io.devify.fs";
+  component.name = "io.flowchain.fs";
   component.description = "This component save the received data to a local file.";
 
   // Register ports and event handlers
