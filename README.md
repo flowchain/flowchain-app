@@ -2,11 +2,9 @@ Flowchain is an ultra light-weight runtime for flow-based IoT programming.
 
 # Flowchain
 
-![Flowchain Usage](https://raw.githubusercontent.com/flowchain/flowchain/master/screenshots/usage.gif)
-
 Flowchain is JavaScript runtime to run serverless IoT application server. You can write IoT serverless server (running at localhost) with Flowchain.
 
-Unlike the legacy monolithic application programming model. Flowchain is the flow-based programming model.
+![Flowchain Usage](https://raw.githubusercontent.com/flowchain/flowchain/master/screenshots/usage.gif)
 
 With flowchain, you're drawing the *Graph* and writing the graph in the form of JSON. Flowchain can run the graph as a service process (server) at your IoT devices.
 
@@ -111,7 +109,8 @@ You could send a PR to [flowchain](https://github.com/flowchain/flowchain). You 
 
 * Flowchain is a **Graph Server** based upon [devify-server](https://github.com/DevifyPlatform/devify-server). 
 
-* Flowchain is a better programming model for IoT application (server).
+* Flowchain is a better programming model for IoT application (server). Unlike the legacy monolithic application programming model. Flowchain is the flow-based programming model.
+
 
 ## Internals
 
