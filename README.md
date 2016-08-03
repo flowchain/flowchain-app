@@ -129,7 +129,7 @@ Flowchain open source project is heavily inspired by [J. Paul Morrison](http://w
 
 * [2016] Building Flowchain on [JerryScript](https://github.com/Samsung/jerryscript), an ultra-lightweight JavaScript engine for the Internet of Things.
 
-* [2016] React component binding with state stores.
+* [2016] React component binding with state stores and Flux pattern.
 
 ## License
 
