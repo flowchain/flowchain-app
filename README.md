@@ -6,7 +6,7 @@ Flowchain is a JavaScript runtime to run IoT application server. You can write I
 
 <img src="https://raw.githubusercontent.com/flowchain/flowchain/master/screenshots/usage.gif" border="1" />
 
-With flowchain, you're drawing the *Graph* and writing the graph in the form of JSON. Flowchain can run the graph as a service process (server) at your IoT devices.
+With flowchain, you're drawing the *Graph* in the form of JSON. Flowchain can run the graph as a service process (server) at your IoT devices or desktops.
 
 ## Usage
 
