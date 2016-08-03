@@ -111,6 +111,8 @@ You could send a PR to [flowchain](https://github.com/flowchain/flowchain). You 
 
 * Unlike the legacy monolithic application programming model. Flowchain is the flow-based programming model.
 
+* Flowchain is one-way data flows.
+
 ## Internals
 
 * Flowchain has a ultra light-weight flow-based runtime called **fb0**. *fb0* is tiny with 300+ lines code.
@@ -126,6 +128,8 @@ Flowchain open source project is heavily inspired by [J. Paul Morrison](http://w
 ## Roadmap
 
 * [2016] Building Flowchain on [JerryScript](https://github.com/Samsung/jerryscript), an ultra-lightweight JavaScript engine for the Internet of Things.
+
+* [2016] React component binding with state stores.
 
 ## License
 
