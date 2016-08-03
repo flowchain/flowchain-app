@@ -12,7 +12,9 @@ $ ./bin/init.js start graphs/console.json
 WoT/CoAP server is listening at coap://localhost:8000
 ```
 
-## Graph
+## Paradigm
+
+### Graph
 
 Flowchain will execute the *console.json* graph which is called *Flowchain Application*. And *console.json* is simplely a graph described in JSON format.
 
@@ -35,11 +37,17 @@ The visual graph diagram is as following.
 
 ![](https://cloud.githubusercontent.com/assets/1126021/17215664/409fd6ec-5510-11e6-80fb-371b6c3a724e.png)
 
-## Component
+### Component
 
 Flow components are published as npm module. One of the components is ```io.flowchain.console``` which can be found at [io.flowchain.console](https://www.npmjs.com/package/io.flowchain.console).
 
-## Developing Component
+## Programming
+
+### Write Your Graph
+
+There are [flowchain graph examples](https://github.com/flowchain/flowchain/tree/master/graphs).
+
+### Add a New Component
 
 1. Custom component can be developed by forking this example [io.flowchain.console](https://github.com/flowchain/io.flowchain.console).
 
