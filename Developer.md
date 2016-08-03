@@ -41,11 +41,11 @@ Flow components are published as npm module. One of the components is ```io.flow
 
 ## Developing Component
 
-1. Custom component can be developed by forking this example [io.flowchain.console](https://github.com/flowchain/io.flowchain.console) as well. 
+1. Custom component can be developed by forking this example [io.flowchain.console](https://github.com/flowchain/io.flowchain.console).
 
 2. Publish your component to npm.
 
-3. Update package.json by npm install <your-package> --save.
+3. Update package.json by ```npm install <your-package> --save```.
 
 4. Open lib/main.js file. and require (include) your component to flowchain.
 
@@ -56,4 +56,4 @@ var components =[
 ];
 ```
 
-Finally, you can send a PR to [flowchain](https://github.com/flowchain/flowchain).
+Finally, you can send a PR to [flowchain](https://github.com/flowchain/flowchain). You flowchain component will also be listed at [flowchain.io](http://flowchain.io).
