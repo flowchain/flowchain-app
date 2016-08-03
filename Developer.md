@@ -47,7 +47,7 @@ Flow components are published as npm module. One of the components is ```io.flow
 
 3. Update package.json by ```npm install <your-package> --save```.
 
-4. Open lib/main.js file. and require (include) your component to flowchain.
+4. Open ```lib/main.js``` file. and require (include) your component to flowchain.
 
 ```
 var components =[
