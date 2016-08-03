@@ -49,11 +49,17 @@ tmr.alarm(0, 1000, 1, function()
 end)
 ```
 
-## Flow-Based Programming
+## Internals
 
-There is a simple and light-weight FBP runtime system called **fb0** inside the [WoT.City framework](https://wotcity.com). This system is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and [NoFlo](https://github.com/noflo/noflo). *fb0* is very tiny, and with only 300+ lines of code.
+* Flowchain has a ultra light-weight flow-based runtime called **fb0**. *fb0* is tiny with 300+ lines code.
 
-The design of **fb0** is also simple. It's neither *the classical* FBP by J. Paul Morrison, nor the *FBP-like* NoFlo.
+* Flowchain has CoAP/WebSocket URI-based protocol servers for interoperating with IoT devices.
+
+
+
+## Credits
+
+Flowchain open source project is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and FBP-like  [NoFlo](https://github.com/noflo/noflo).
 
 *fb0* is a *FBP-like* system and is a JavaScript system motivated by [J. Paul Morrison](http://www.jpaulmorrison.com/), and which uses a number of the same terms and concepts.
 
