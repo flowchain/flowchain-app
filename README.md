@@ -14,6 +14,7 @@ The simplest way to learn flowchain is to start *console.json*.
 
 ```
 $ git clone https://github.com/flowchain/flowchain.git
+$ cd flowchain
 $ npm install
 $ export HOST=192.168.0.100
 $ ./bin/init.js start graphs/console.json 
