@@ -18,14 +18,14 @@ Flowchain will execute the *console.json* graph which is called *Flowchain Appli
 
 ```
 {
-    “author”: “jollen”,
-    “type”: “coapBroker”,
-    “connections”: [
+    "author": "jollen",
+    "type": "coapBroker",
+    "connections": [
         {
-            “upproc”: “io.devify.fs”,
-            “upport”: “out”,
-            “downproc”: “io.devify.console”,
-            “downport”: “in”
+            "upproc": "io.flowchain.console",
+            "upport": "out",
+            "downproc": "io.flowchain.fs",
+            "downport": "in"
         }
     ]
 }
@@ -34,3 +34,26 @@ Flowchain will execute the *console.json* graph which is called *Flowchain Appli
 The visual graph diagram is as following.
 
 ![](https://cloud.githubusercontent.com/assets/1126021/17215664/409fd6ec-5510-11e6-80fb-371b6c3a724e.png)
+
+## Component
+
+Flow components are published as npm module. One of the components is ```io.flowchain.console``` which can be found at [io.flowchain.console](https://www.npmjs.com/package/io.flowchain.console).
+
+## Developing Component
+
+1. Custom component can be developed by forking this example [io.flowchain.console](https://github.com/flowchain/io.flowchain.console) as well. 
+
+2. Publish your component to npm.
+
+3. Update package.json by npm install <your-package> --save.
+
+4. Open lib/main.js file. and require (include) your component to flowchain.
+
+```
+var components =[
+  ...
+  require('io.flowchain.console')
+];
+```
+
+Finally, you can send a PR to [flowchain](https://github.com/flowchain/flowchain).
