@@ -1,5 +1,7 @@
 Serverless IoT server in a simpilicy way.
 
+Flowchain is an ultra light-weight runtime for flow-based IoT programming.
+
 **Flowchain** is a **Graph Server** based upon [devify-server](https://github.com/DevifyPlatform/devify-server). It's a new programming model for IoT serverless server.
 
 # Flowchain
@@ -10,7 +12,9 @@ Unlike the legacy monolithic application programming model. Flowchain is the flo
 
 With flowchain, you're drawing the *Graph* and writing the graph in the form of JSON. Flowchain can run the graph as a service process (server) at your IoT devices.
 
-## Quickstart
+## Usage
+
+The simplest way to learn flowchain is to start *console.json*.
 
 ```
 $ git clone https://github.com/flowchain/flowchain.git
@@ -20,9 +24,9 @@ $ ./bin/init.js start graphs/console.json
 WoT/CoAP server is listening at coap://localhost:8000
 ```
 
-## Programing IoT device
+### Programing IoT device
 
-The simplest way to send sensor data to flowchain IoT server via CoAP is using NodeMCU and Lua programming language.
+This is out of scope of flowchain. However, there is an example to show the simplest way to send sensor data to flowchain application via CoAP. The following example uses NodeMCU/ESP8266 device and Lua programming language.
 
 ```
 -- Configure the ESP as a station (client)
@@ -49,13 +53,65 @@ tmr.alarm(0, 1000, 1, function()
 end)
 ```
 
+## Programming Paradigm
+
+### Graph
+
+Flowchain will execute the *console.json* graph which is called *Flowchain Application*. And *console.json* is simplely a graph described in JSON format.
+
+```
+{
+    "author": "jollen",
+    "type": "coapBroker",
+    "connections": [
+        {
+            "upproc": "io.flowchain.console",
+            "upport": "out",
+            "downproc": "io.flowchain.fs",
+            "downport": "in"
+        }
+    ]
+}
+```
+
+The visual graph diagram is as following.
+
+![](https://cloud.githubusercontent.com/assets/1126021/17215664/409fd6ec-5510-11e6-80fb-371b6c3a724e.png)
+
+### Component
+
+Flow components are published as npm module. One of the components is ```io.flowchain.console``` which can be found at [io.flowchain.console](https://www.npmjs.com/package/io.flowchain.console).
+
+## Development Notes
+
+### Write Your Graph
+
+There are [flowchain graph examples](https://github.com/flowchain/flowchain/tree/master/graphs).
+
+### Add a New Component
+
+1. Custom component can be developed by forking this example [io.flowchain.console](https://github.com/flowchain/io.flowchain.console).
+
+2. Publish your component to npm.
+
+3. Update package.json by ```npm install <your-package> --save```.
+
+4. Open ```lib/main.js``` file. and require (include) your component to flowchain.
+
+```
+var components =[
+  ...
+  require('io.flowchain.console')
+];
+```
+
+You could send a PR to [flowchain](https://github.com/flowchain/flowchain). You flowchain component will also be listed at [flowchain.io](http://flowchain.io).
+
 ## Internals
 
 * Flowchain has a ultra light-weight flow-based runtime called **fb0**. *fb0* is tiny with 300+ lines code.
 
 * Flowchain has CoAP/WebSocket URI-based protocol servers for interoperating with IoT devices.
-
-
 
 ## Credits
 
