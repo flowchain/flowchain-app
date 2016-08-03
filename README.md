@@ -96,7 +96,7 @@ There are [flowchain graph examples](https://github.com/flowchain/flowchain/tree
 
 3. Update package.json by ```npm install <your-package> --save```.
 
-4. Open ```lib/main.js``` file. and require (include) your component to flowchain.
+4. Open ```lib/main.js``` file and require (include) your component into flowchain.
 
 ```
 var components =[
