@@ -2,7 +2,7 @@ Flowchain is an ultra light-weight runtime for flow-based IoT programming.
 
 # Flowchain
 
-Flowchain is a JavaScript runtime to run IoT application server. You can write IoT server, serverless server or localhost server with Flowchain in flow-based programming.
+You can write IoT server, serverless server or localhost server with Flowchain in flow-based programming.
 
 <img src="https://raw.githubusercontent.com/flowchain/flowchain/master/screenshots/usage.gif" border="1" />
 
@@ -103,19 +103,21 @@ var components =[
 
 You could send a PR to [flowchain](https://github.com/flowchain/flowchain). You flowchain component will also be listed at [flowchain.io](http://flowchain.io).
 
-## Design Notes
+## Why and What
 
-* Flowchain is designing for Serverless IoT server in a simpilicy way. And it is a better approach to write IoT application servers. 
+* Instead of the classical monolithic application programming model. Flowchain is the flow-based programming.
 
-* Flowchain is a **Graph Server** based upon [devify-server](https://github.com/DevifyPlatform/devify-server). 
+* Flowchain is a flow-based runtime for JavaScript IoT application server. 
 
-* Unlike the legacy monolithic application programming model. Flowchain is the flow-based programming model.
+* Flowchain is a better approach to write IoT application servers. 
 
-* Flowchain is one-way data flows.
+* Flowchain is based on [devify-server](https://github.com/DevifyPlatform/devify-server). 
+
+* Flowchain is one-way data flow design.
 
 ## Internals
 
-* Flowchain has a ultra light-weight flow-based runtime called **fb0**. *fb0* is tiny with 300+ lines code.
+* Flowchain has a ultra-lightweight flow-based runtime called **fb0**. *fb0* is tiny with 300+ lines code.
 
 * Flowchain has CoAP/WebSocket URI-based protocol servers for interoperating with IoT devices.
 
@@ -130,6 +132,8 @@ Flowchain open source project is heavily inspired by [J. Paul Morrison](http://w
 * [2016] Building Flowchain on [JerryScript](https://github.com/Samsung/jerryscript), an ultra-lightweight JavaScript engine for the Internet of Things.
 
 * [2016] React component binding with state stores and Flux pattern.
+
+* [2016] Serverless IoT in a simpilicy way. 
 
 ## License
 
