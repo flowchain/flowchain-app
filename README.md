@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/flowchain/flowchain.github.io/master/images/logo%40128.png)
+![](https://raw.githubusercontent.com/flowchain/flowchain.github.io/master/images/logo-text%40128.png)
 
 Flowchain is an ultra light-weight runtime for flow-based IoT programming.
 
