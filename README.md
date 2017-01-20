@@ -1,6 +1,6 @@
 ![](https://raw.githubusercontent.com/flowchain/flowchain.github.io/master/images/logo-text%40128.png)
 
-Flowchain is an ultra light-weight runtime for flow-based IoT programming.
+Flowchain-app is an ultra light-weight runtime for flow-based IoT programming.
 
 # Flowchain
 
@@ -8,11 +8,11 @@ You can write IoT server, serverless server or localhost server with Flowchain i
 
 <img src="https://raw.githubusercontent.com/flowchain/flowchain/master/screenshots/usage0.gif?v0.1" border="1" />
 
-With flowchain, you're drawing the *Graph* in the form of JSON. Flowchain can run the graph as a service process (server) at your IoT devices or desktops.
+In the flowchain-app, IoT applications are described by a *Graph* in the JSON format. Flowchain-app can execute the graph as a service process (server) on various hardware, e.g., resource-constrained devices, single-board computers and desktops.
 
 ## Usage
 
-The simplest way to learn flowchain is to start *console.json*.
+A easy way to start using flowchain-app is trying *console.json*.
 
 ```
 $ git clone https://github.com/flowchain/flowchain.git
@@ -24,11 +24,11 @@ $ ./bin/init.js start graphs/console.json
 WoT/CoAP server is listening at coap://192.168.0.100:8000
 ```
 
-Flowchain application is listening at the host assigned by ```HOST``` environment variable. You can export ```PORT``` to assign listening port as well.
+Flowchain-app is now listening at the host assigned by ```HOST``` environment variable. You can also export the ```PORT``` variable to specify the listening port.
 
 ### Programing IoT device
 
-This is out of scope of flowchain. However, there is an example to show the simplest way to send sensor data to flowchain application via CoAP. The following example uses NodeMCU/ESP8266 device and Lua programming language.
+It is out of scope of flowchain-app. However, there is an example showing a sample in which send sensor data to flowchain-app over CoAP. The following example uses a NodeMCU (aka ESP8266) device with Lua programming language.
 
 ```
 -- Configure the ESP as a station (client)
@@ -59,7 +59,7 @@ end)
 
 ### Graph
 
-Flowchain will execute the *console.json* graph which is called *Flowchain Application*. And *console.json* is simplely a graph described in JSON format.
+Flowchain-app will execute the *console.json* file. The *console.json* is a sample graph described in JSON format.
 
 ```
 {
@@ -76,23 +76,23 @@ Flowchain will execute the *console.json* graph which is called *Flowchain Appli
 }
 ```
 
-The visual graph diagram is as following.
+The visual graph diagram is also shown as following.
 
 ![](https://cloud.githubusercontent.com/assets/1126021/17215664/409fd6ec-5510-11e6-80fb-371b6c3a724e.png)
 
 ### Component
 
-Flow components are published as npm module. One of the components is ```io.flowchain.console``` which can be found at [io.flowchain.console](https://www.npmjs.com/package/io.flowchain.console).
+Flowchain-app components could be published as npm modules. One existing component is ```io.flowchain.console``` and accessible at [io.flowchain.console](https://www.npmjs.com/package/io.flowchain.console).
 
 ## Development Notes
 
 ### Write Your Graph
 
-There are [flowchain graph examples](https://github.com/flowchain/flowchain/tree/master/graphs).
+There are several [flowchain graph examples](https://github.com/flowchain/flowchain/tree/master/graphs).
 
 ### Add a New Component
 
-1. Custom component can be developed by forking this example [io.flowchain.console](https://github.com/flowchain/io.flowchain.console).
+1. To develop custom components, please fork this example [io.flowchain.console](https://github.com/flowchain/io.flowchain.console).
 
 2. Publish your component to npm.
 
@@ -107,40 +107,40 @@ var components =[
 ];
 ```
 
-You could send a PR to [flowchain](https://github.com/flowchain/flowchain). You flowchain component will also be listed at [flowchain.io](http://flowchain.io).
+You could send a PR to [flowchain](https://github.com/flowchain/flowchain). All flowchain-app components will also be listed at the [flowchain.io](http://flowchain.io) website.
 
 ## Why and What
 
-* Instead of the classical monolithic application programming model. Flowchain is the flow-based programming.
+* Instead of the classical monolithic application programming model. Flowchain-app is the flow-based programming.
 
-* Flowchain is a flow-based runtime for JavaScript IoT application server. 
+* Flowchain-app is a flow-based runtime for JavaScript IoT application server. 
 
-* Flowchain is a better approach to write IoT application servers. 
+* Flowchain-app is a better approach to write IoT application servers. 
 
-* Flowchain is based on [devify-server](https://github.com/DevifyPlatform/devify-server). 
+* Flowchain-app is based on [devify-server](https://github.com/DevifyPlatform/devify-server). 
 
-* Flowchain is one-way data flow design.
+* Flowchain-app is one-way data flow design.
 
 ## Internals
 
-* Flowchain has a ultra-lightweight flow-based runtime called **fb0**. *fb0* is tiny with 300+ lines code.
+* Flowchain-app has a ultra-lightweight flow-based runtime called **fb0**. *fb0* is tiny with 300+ lines code.
 
-* Flowchain has CoAP/WebSocket URI-based protocol servers for interoperating with IoT devices.
+* Flowchain-app has CoAP/WebSocket URI-based protocol servers for interoperating with IoT devices.
 
 ## Credits
 
-Flowchain open source project is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and FBP-like  [NoFlo](https://github.com/noflo/noflo).
+Flowchain-app project is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and FBP-like  [NoFlo](https://github.com/noflo/noflo).
 
 *fb0* is a *FBP-like* system and is a JavaScript system motivated by [J. Paul Morrison](http://www.jpaulmorrison.com/), and which uses a number of the same terms and concepts.
 
 ## Roadmap
 
-* [2016] Building Flowchain on [JerryScript](https://github.com/Samsung/jerryscript), an ultra-lightweight JavaScript engine for the Internet of Things.
+* [2017] Building flowchain-app on [JerryScript](https://github.com/Samsung/jerryscript), an ultra-lightweight JavaScript engine for the Internet of Things.
 
-* [2016] React component binding with state stores and Flux pattern.
+* [2017] React component binding with state stores and Flux pattern.
 
-* [2016] Serverless IoT in a simpilicy way. 
+* [2017] Serverless IoT in a simpilicy way. 
 
 ## License
 
-Flowchain is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+Flowchain-app is released under the [MIT License](http://www.opensource.org/licenses/MIT).
