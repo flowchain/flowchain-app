@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/flowchain/flowchain.github.io/master/images/logo-text%40128.png)
+![](https://flowchain.io/fb0/images/logo-text%40128.png)
 
 Flowchain-app is an ultra light-weight runtime for flow-based IoT programming.
 
